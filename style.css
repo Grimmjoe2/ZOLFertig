@@ -1,0 +1,1193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anton', sans-serif;
+  background: black;
+
+}
+
+nav{
+  background: black;
+  padding: 5px 120px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 10px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 59px;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  transition: .4s;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 550;
+}
+nav ul li:hover a{
+  color: white;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+
+}
+nav ul li.btn {
+  color: white;
+}
+
+hr {
+
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  background-color: white;
+}
+
+/* Stimme der Kultur start*/
+.textbox {
+  width: 50%;
+  margin-left: 120px;
+  padding-top: 4rem;
+  white-space: nowrap;
+
+}
+.textbox .Stimme {
+
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 4rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+
+}
+.textbox .open {
+  color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+/* Stimme der Kulutr End  */
+
+/* Circle Start  */
+.container {
+  background-color: black;
+position: relative;
+  width: 100vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+
+  }
+
+.circle {
+
+  display:flex;
+  justify-content: center;
+}
+.circle img {
+  width: 80%;
+  margin:auto;
+}
+
+
+
+
+/* Circle End  */
+.hide {
+  display:none;
+}
+.Off-SpaceText {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  color: white;
+  text-align: center;
+
+
+}
+.Off-SpaceText P {
+  line-height: 2;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+
+
+
+
+
+@media all and (max-width: 600px){
+
+    .center-C {
+/*
+      width: 100% !important;
+      margin: 0 50px !important; */
+
+    }
+
+  nav{
+    /* display: none; */
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px  #d76213,
+                inset 0 0 10px  #d76213;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+  .textbox {
+
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .textbox .Stimme {
+    font-size: 2.7rem;
+    text-align: center;
+
+
+  }
+  .textbox .open {
+    text-align: center;
+  }
+  .ticket-bar {
+   margin-top: 4rem !important;
+   max-height: 140px;
+   width: 90% !important;
+   margin: 0 auto;
+
+    /* height: 200px; */
+  }
+  .Off-SpaceText {
+    text-align: center;
+    padding: 0 1rem;
+    /* margin: 0 0; */
+  }
+  .Off-SpaceText p {
+    font-size: 1rem !important;
+  }
+.tickets{
+
+  /* border:  2px solid white; */
+  padding-top: .2rem !important;
+}
+
+  .ticket-bar p {
+
+    font-size: 3rem !important;
+  }
+  .ticket-kaufen  {
+  /* padding-top:  2rem; */
+  /* padding-bottom: 1rem !important; */
+  }
+  .ticket-kaufen {
+    background-color: #d76213;
+    max-height: 70px  !important;
+
+  }
+  .ticket-kaufen a {
+    padding: 0 10px;
+    background-color: black;
+    font-size:1rem !important;
+
+  }
+  .container {
+
+    /* display: none; */
+
+  }
+  .partner{
+  padding-right: 0;
+  }
+  .circle img {
+    /* height: 1000px;
+    width:1000px; */
+    width: 100%;
+  }
+
+.right-circle {
+  display:none;
+}
+  .right-circle img {
+    display:none;
+
+  }
+  .programm-section{
+
+  }
+.welcome-section
+{
+  text-align: center;
+  padding: 0 1rem;
+
+}
+.welcome-section p {
+  font-size: 1.2rem;
+}
+  .desktop-show {
+          display: initial;
+      }
+
+      .row {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+      }
+      .column {
+        min-width: 390px;
+        min-height: 20px;
+        margin-bottom: 2rem;
+
+      }
+      .column p {
+        font-size: 1rem;
+      }
+
+      .programm-footer {
+        margin: 0 0;
+        padding: 0 0;
+
+      }
+
+      .techno-section {
+        margin-top: 0;
+        padding-top:0;
+
+      }
+
+.line-up-section {
+  background-repeat: no-repeat;
+
+}
+.textbox  {
+  padding-top: 1rem;
+}
+.programm-section {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+.circle-overlay {
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+
+
+}
+.circle-overlay img {
+  width: 80% !important;
+}
+.programm-text {
+  /* border: 2px solid white; */
+ left: 0% !important;
+ text-align: center;
+  width: 100%;
+  font-size: 2.5rem !important;
+  /* margin: auto; */
+}
+.Sonne {
+  left:0% !important;
+  width: 100%;
+  text-align: center;
+  /* border: 2px solid white; */
+  font-size: 1.5rem !important;
+}
+
+.Uhrzeit {
+  left:0% !important;
+  width: 100%;
+  text-align: center;
+  /* border: 2px solid white; */
+    font-size: 1.5rem !important;
+}
+.programm-footer {
+
+  margin-bottom: 2rem !important;
+
+}
+.programm-footer p {
+  padding-top: 2rem !important;
+
+ font-size: 1.4rem !important;
+ padding-left: 1rem;
+ padding-right: 1rem;
+}
+
+.techno-section {
+
+  padding: 0px 5px !important;
+
+}
+.list {
+  padding-top: 1rem !important;
+ width: 100% !important;
+
+}
+
+.list-circle{
+ width: 10% !important;
+ height:10% !important;
+}
+
+.list li {
+  display: flex;
+}
+.list p {
+  font-size: 1.4rem !important;
+
+  width: 100% !important;
+
+}
+.danksagung {
+
+  text-align: left !important;
+  padding: 3rem 1rem !important;
+}
+
+.danksagung p {
+  font-size: 1rem !important;
+}
+.list ul li {
+  padding-left: 0.5rem !important;
+}
+
+.PartnerSection {
+}
+
+
+.PartnerSection p{
+ left:0% !important;
+ text-align: left !important;
+ padding-left: 2.4rem;
+
+}
+.circle-overlay-p img{
+ width: 65% !important;
+}
+
+.break {
+  display: none;
+}
+
+}
+/* Ipad Media  */
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)  {
+
+
+
+
+  .Stimme {
+    font-size: 4rem !important;
+  }
+
+  .circle-overlay p {
+    font-size: 4rem !important;
+  }
+  .welcome-section p{
+    font-size: 2rem !important;
+  }
+
+  .column {
+    min-width: 700px !important;
+
+  }
+  .column p {
+
+    font-size: 2rem !important;
+  }
+
+
+
+
+
+
+
+  /* --- */
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px  #d76213,
+                inset 0 0 10px  #d76213;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+  .textbox {
+
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .textbox .Stimme {
+    font-size: 2.7rem;
+    text-align: center;
+
+
+  }
+  .textbox .open {
+    text-align: center;
+  }
+  .ticket-bar {
+
+   max-height: 170px;
+   width: 90% !important;
+   margin: 0 auto;
+
+    /* height: 200px; */
+  }
+.tickets{
+
+  /* border:  2px solid white; */
+  padding-top: .2rem !important;
+}
+
+  .ticket-bar p {
+
+    font-size: 3rem !important;
+  }
+  .ticket-kaufen  {
+  /* padding-top:  2rem; */
+  padding-bottom: 1rem !important;
+  }
+  .ticket-kaufen {
+    background-color: #d76213;
+    max-height: 70px  !important;
+
+  }
+  .ticket-kaufen a {
+    padding: 0 10px;
+    background-color: black;
+    font-size:1rem !important;
+
+  }
+  .container {
+
+    /* display: none; */
+
+  }
+
+  .partner{
+  padding-right: 0;
+  }
+  .circle {
+    height: 400px;
+    width: 400px;
+  }
+
+.right-circle {
+  display:none;
+}
+  .right-circle img {
+    display:none;
+
+  }
+  .programm-section{
+
+  }
+.welcome-section
+{
+  text-align: center;
+  padding: 0 1rem;
+
+}
+.welcome-section p {
+  font-size: 1.2rem;
+}
+  .desktop-show {
+          display: initial;
+      }
+
+      .row {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+
+
+
+      }
+      .column {
+        min-width: 390px;
+        min-height: 20px;
+        margin-bottom: 2rem;
+
+      }
+      .column p {
+        font-size: 1rem;
+      }
+
+      .programm-footer {
+        margin: 0 0;
+        padding: 0 0;
+
+      }
+
+      .techno-section {
+        margin-top: 0;
+        padding-top:0;
+
+      }
+
+.line-up-section {
+  background-repeat: no-repeat;
+}
+.textbox  {
+  padding-top: 1rem;
+}
+.programm-section {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+.circle-overlay {
+  /* border: 2px solid white; */
+  display: flex;
+  justify-content: center;
+
+
+}
+.circle-overlay img {
+  width: 80% !important;
+}
+.programm-text {
+  /* border: 2px solid white; */
+ left: 0% !important;
+ text-align: center;
+  width: 100%;
+  font-size: 2.5rem !important;
+  /* margin: auto; */
+}
+.Sonne {
+  left:0% !important;
+  width: 100%;
+  text-align: center;
+  /* border: 2px solid white; */
+  font-size: 1.5rem !important;
+}
+
+.Uhrzeit {
+  left:0% !important;
+  width: 100%;
+  text-align: center;
+  /* border: 2px solid white; */
+    font-size: 1.5rem !important;
+}
+.programm-footer {
+
+  margin-bottom: 2rem !important;
+
+}
+.programm-footer p {
+  padding-top: 2rem !important;
+ padding-left: 1rem;
+ padding-right: 1rem;
+}
+
+.techno-section {
+
+  padding: 0px 5px !important;
+
+}
+.list {
+  padding-top: 1rem !important;
+ width: 100% !important;
+
+}
+
+.list-circle{
+ width: 10% !important;
+ height:10% !important;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+}
+.list p {
+  font-size: 2rem !important;
+
+  width: 100% !important;
+
+}
+.danksagung {
+
+  text-align: left !important;
+  padding: 3rem 1rem !important;
+}
+
+.danksagung p {
+  font-size: 2rem !important;
+}
+.list ul li {
+  padding-left: 0.5rem !important;
+}
+
+.PartnerSection {
+
+}
+
+
+.PartnerSection p{
+ left:0% !important;
+ text-align: left !important;
+ padding-top: 2rem;
+ padding-left: 3rem;
+
+
+}
+
+.circle-overlay-p img{
+ width: 50% !important;
+}
+  /* --- */
+
+    .prog {
+      font-size: 2.4rem !important;
+    }
+}
+
+/* Icon Bars */
+
+.sticky-icon  {
+	z-index:2;
+	position:fixed;
+	top:35%;
+	right:0%;
+	width:50px;
+	display:flex;
+	flex-direction:column;
+  padding-right: 70px;
+  background-color: transparent;
+
+}
+.icons {
+  height: 35px;
+  background-color: transparent;
+
+}
+.sticky-icon a  {
+
+	margin:2px ;
+	padding:10px;
+  background-color: transparent;
+}
+.fa-brands {
+  color: white;
+  margin:2px;
+  cursor:pointer;
+  padding:20px 10px;
+  background-color: transparent;
+
+}
+
+/* Icon Bars End  */
+
+/* TIckets kaufen Section Start */
+.ticket-bar {
+
+  margin-top: 11rem;
+  height: 275px;
+  background-color: #d76213;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+}
+.tickets {
+  padding-top: 2.5rem;
+background-color:  #d76213;
+
+
+display:flex;
+/* justify-content: center; */
+
+}
+
+.tickets p{
+  background-color:  #d76213;
+  color:black;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+
+}
+.ticket-kaufen {
+  width: 27%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  transition: .3s;
+  /* border: 2px solid white; */
+  margin-bottom: 1rem;
+
+}
+
+.ticket-kaufen a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: .3s;
+  transition: all 0.5s;
+ cursor: pointer;
+
+}
+.ticket-kaufen:hover {
+  transform: scale(1.1);
+  transition: .4s;
+}
+/* Tickets kaufen Section End  */
+
+/* Line-Up-Section Start*/
+.line-up-section {
+  margin-top: 5rem;
+  height: 100vh;
+  background-image: url(Bilder/AcidFluid.png);
+  background-size: cover;
+
+}
+.line-up{
+
+  background-color: transparent;
+}
+
+/* Slider Start */
+
+
+
+
+
+/* line-Up-Section End */
+
+/* Prgramm Section Start  */
+.programm-section {
+  margin-top: 5rem;
+
+
+}
+.circle-overlay {
+  position: relative;
+}
+.programm-text {
+  position: absolute;
+  top: 15%;
+  left: 5.5%;
+  color:white;
+  background-color: transparent;
+   font-size: 4vw;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  transform:
+}
+.Sonne {
+  color: white;
+  position: absolute;
+  top:40%;
+  left: 5.5%;
+  font-size: 4vw;
+    letter-spacing: 3px;
+  background-color: transparent;
+}
+.Uhrzeit {
+  color:white;
+  position: absolute;
+  top:56%;
+  left:5.5%;
+  letter-spacing: 2px;
+  font-size: 4vw;
+  background-color: transparent;
+  font-weight: lighter;
+}
+.circle-overlay img{
+  width: 30%;
+
+}
+
+/* Prgramm Section End    */
+
+.welcome-section {
+  margin:4rem 0;
+  display: flex;
+  justify-content: center;
+  font-size: 2vw;
+}
+.welcome-section .punkt{
+  color:#d76213;
+}
+.welcome-section p {
+  color:white;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+
+}
+
+/* Rows Start*/
+.row {
+  position: relative;
+  text-align: center;
+  margin: 40px auto;
+}
+.text-section {
+  position: absolute;
+  color: white;
+  font-size: 1.5vw;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  background-color: transparent;
+
+
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.programm-footer {
+ text-align: center;
+ margin-bottom: 4rem;
+
+
+}
+
+.programm-footer p {
+  /* padding-top: 25rem; */
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+
+/* Techno Section start */
+.techno-section {
+    padding: 5px 120px;
+    display:flex;
+}
+.list{
+  padding-top: 3rem;
+  width: 50%;
+
+}
+.right-circle {
+  width: 50%;
+}
+
+.list-circle{
+ width: 6%;
+ height:6%
+}
+
+.list li {
+  display: flex;
+}
+.list p {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-size: 1.5vw;
+  padding-left: 10px;
+}
+
+.list ul li {
+  padding-bottom: 2.2rem;
+  justify-content: left;
+}
+.list ul li img {
+  margin: auto 0;
+}
+
+.danksagung {
+  padding-top: 2rem;
+}
+
+/* Techno Section end */
+
+/* Partner Section Start  */
+
+.circle-overlay-p {
+  position: relative;
+}
+
+.PartnerSection {
+   margin-top: 7rem;
+}
+
+
+.circle-overlay-p img{
+  width: 28%;
+
+}
+.sol-partner{
+  margin-top: 5rem;
+  height: 35vh;
+  background-image: url(Bilder/Partner_Balken.png);
+  z-index: 60;
+  opacity: .5;
+
+
+}
+
+/* Partner Section End  */
+
+/* Impressum Start  */
+.Impressum-page {
+  text-align: left;
+  margin-top: 10rem;
+  padding: 0 3rem;
+  padding-bottom: 4rem;
+}
+.Impressum-page p {
+    font-family: 'Nunito', sans-serif;
+  color: white;
+}
+.impressum-font {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 4rem;
+}
+
+.headlines
+{
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  font-size:1.2rem;
+  text-decoration: underline;
+}
+.Impressum-page a {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+/* Impressum End  */
+
+/* Datenschutz Start */
+
+.Datenschutz-Block{
+  color: white;
+  text-align: left;
+  margin-top: 10rem;
+  padding: 0 3rem;
+  padding-bottom: 4rem;
+}
+
+/* ,h2,h3,h4,p,a,ul li */
+
+.Datenschutz-Block h1,h2,h3,h4,a,ul li {
+  font-family: 'Nunito', sans-serif;
+}
+
+.Datenschutz-Block h2 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.Datenschutz-Block p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.Datenschutz-Block h3 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.Datenschutz-Block h4 {
+  padding-bottom: .5rem;
+  padding-bottom: .5rem;
+}
+.Datenschutz-Block a {
+  color: white;
+  text-decoration: none;
+}
+.headline-D {
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+.Datenschutz-Block ul li {
+ list-style: none;
+}
+
+/* Datenschutz End  */
+
+
+
+
+/* Agbs Start */
+
+.AGBs-page {
+
+  color: white;
+  text-align: left;
+  margin-top: 10rem;
+  padding: 0 3rem;
+  padding-bottom: 4rem;
+}
+
+.AGBs-page h1 {
+  font-family: 'Nunito', sans-serif;
+
+}
+.AGBs-page h2 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.AGBs-page h3 {
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+}
+.AGBs-page h4 {
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+}
+.AGBs-page p {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Agbs End  */
+
+/* Maps Google Start */
+
+.MapDieKarte {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+
+/* Maps Google End   */
+
+
+
+
+
+/* Footer Section Start */
+.footer {
+  display:flex;
+  color:white;
+  height: 5rem;
+  gap: 2rem;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+
+
+}
+.footer p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+.footer a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+/* Footer Section End */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+}
